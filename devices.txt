@@ -1,0 +1,102 @@
+add device 1: /dev/input/event13
+  name:     "grip_notifier"
+  events:
+    REL (0002): 0000 
+  input props:
+    <none>
+add device 2: /dev/input/event12
+  name:     "grip_sensor_wifi"
+  events:
+    REL (0002): 0000  0001  0007  0008  0009 
+  input props:
+    <none>
+add device 3: /dev/input/event11
+  name:     "grip_notifier"
+  events:
+    REL (0002): 0000 
+  input props:
+    <none>
+add device 4: /dev/input/event10
+  name:     "grip_sensor"
+  events:
+    REL (0002): 0000  0001  0007  0008  0009 
+  input props:
+    <none>
+add device 5: /dev/input/event9
+  name:     "sec_e-pen"
+  events:
+    KEY (0001): 00ac  00fd  0140  0141  014a  014b 
+    ABS (0003): 0000  : value 0, min 0, max 19589, fuzz 4, flat 0, resolution 0
+                0001  : value 0, min 0, max 31376, fuzz 4, flat 0, resolution 0
+                0018  : value 0, min 0, max 4095, fuzz 0, flat 0, resolution 0
+                0019  : value 0, min 0, max 255, fuzz 0, flat 0, resolution 0
+                001a  : value -11, min -63, max 63, fuzz 0, flat 0, resolution 0
+                001b  : value 2, min -63, max 63, fuzz 0, flat 0, resolution 0
+    SW  (0005): 000d* 000f* 0010 
+  input props:
+    <none>
+add device 6: /dev/input/event7
+  name:     "hall"
+  events:
+    SW  (0005): 0010 
+  input props:
+    <none>
+add device 7: /dev/input/event6
+  name:     "hall_wacom"
+  events:
+    SW  (0005): 000c 
+  input props:
+    <none>
+add device 8: /dev/input/event5
+  name:     "sec_touchpad"
+  events:
+    KEY (0001): 008f  0118  0119  0145  0148  014a  014d  014e 
+                014f  0226  02be 
+    ABS (0003): 0000  : value 0, min 0, max 1847, fuzz 0, flat 0, resolution 0
+                0001  : value 0, min 0, max 2959, fuzz 0, flat 0, resolution 0
+                002f  : value 0, min 0, max 9, fuzz 0, flat 0, resolution 0
+                0030  : value 0, min 0, max 255, fuzz 0, flat 0, resolution 0
+                0031  : value 0, min 0, max 255, fuzz 0, flat 0, resolution 0
+                0035  : value 0, min 0, max 1847, fuzz 0, flat 0, resolution 0
+                0036  : value 0, min 0, max 2959, fuzz 0, flat 0, resolution 0
+                0039  : value 0, min 0, max 65535, fuzz 0, flat 0, resolution 0
+  input props:
+    INPUT_PROP_POINTER
+add device 9: /dev/input/event4
+  name:     "sec_touchscreen"
+  events:
+    KEY (0001): 008f  0118  0119  0145  014a  0226  02be 
+    ABS (0003): 0000  : value 0, min 0, max 1847, fuzz 0, flat 0, resolution 0
+                0001  : value 0, min 0, max 2959, fuzz 0, flat 0, resolution 0
+                002f  : value 0, min 0, max 9, fuzz 0, flat 0, resolution 0
+                0030  : value 0, min 0, max 255, fuzz 0, flat 0, resolution 0
+                0031  : value 0, min 0, max 255, fuzz 0, flat 0, resolution 0
+                0035  : value 0, min 0, max 1847, fuzz 0, flat 0, resolution 0
+                0036  : value 0, min 0, max 2959, fuzz 0, flat 0, resolution 0
+                0039  : value 0, min 0, max 65535, fuzz 0, flat 0, resolution 0
+  input props:
+    INPUT_PROP_DIRECT
+add device 10: /dev/input/event3
+  name:     "hall_logical"
+  events:
+    SW  (0005): 000a  000d  0010 
+  input props:
+    <none>
+add device 11: /dev/input/event2
+  name:     "meta_event"
+  events:
+    REL (0002): 0006  0007 
+  input props:
+    <none>
+add device 12: /dev/input/event0
+  name:     "gpio-keys"
+  events:
+    KEY (0001): 0073 
+  input props:
+    <none>
+add device 13: /dev/input/event1
+  name:     "mtk-pmic-keys"
+  events:
+    KEY (0001): 0072  0074 
+  input props:
+    <none>
