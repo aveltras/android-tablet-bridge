@@ -11,6 +11,19 @@ Currently only tested on a Samsung Galaxy Tab S10 Ultra but should be device agn
 This program creates a virtual tablet device using the kernel **uinput** feature.  
 [Developer options](https://developer.android.com/studio/debug/dev-options) should be enabled on your device and USB debugging enabled (should also work with wireless debugging).
 
+## Installation
+
+Clone the repository and run in its root directory
+
+```sh
+cargo install --path .
+```
+
+You can also use it directly without installation if you have the [Nix package manager](https://nixos.org/) installed
+
+```sh
+nix --extra-experimental-features "nix-command flakes" run github:aveltras/android-tablet-bridge -- forward
+```
 
 ## Usage
 
@@ -49,7 +62,9 @@ Options:
           Print version
 ```
 
-All arguments are optional as the program should automatically detect the right device to use (currently search for a device with a **ButtonToolPen** available).
+All arguments are optional as the program should automatically detect the right device to use (currently search for a device with a **ButtonToolPen** available).  
+The program automatically looks for a suitable device to forward but you can specify which one to use, in order to identify it, you can use `list-device` and `list-sub-device` commands.  
+The `rotation` parameter is useful if you want to use your device in a different orientation than the default one.  
 
 ## Companion app
 
