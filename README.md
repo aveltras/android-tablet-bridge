@@ -50,3 +50,9 @@ Options:
 ```
 
 All arguments are optional as the program should automatically detect the right device to use (currently search for a device with a **ButtonToolPen** available).
+
+## Companion app
+
+You can download a companion android app in the [releases](https://github.com/aveltras/android-tablet-bridge/releases/latest) section.  
+This is simply a starter app where I have made the screen black and kept it turn on for easier use.  
+Source for this app are located in the `android` directory of this repo.
