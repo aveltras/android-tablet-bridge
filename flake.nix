@@ -36,6 +36,8 @@
         ]);
       in
         {
+          packages.default = pkgs.callPackage ./. {};
+
           devShells.default =
             pkgs.mkShell {
               ANDROID_HOME = "${android-sdk}/share/android-sdk";
@@ -49,6 +51,7 @@
                 (rust-bin.selectLatestNightlyWith (
                   toolchain:
                   toolchain.default.override {
+                    targets = [ "x86_64-unknown-linux-gnu" ];
                     extensions = [
                       "rust-analyzer"
                       "rust-src"
